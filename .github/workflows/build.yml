@@ -3,5 +3,3 @@ on: [push, pull_request, workflow_dispatch]
 jobs:
   build:
     uses: ./.github/workflows/reusable-build.yml
-    with:
-      archive_name: firmware-${{ env.display_name }}

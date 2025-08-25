@@ -4,4 +4,4 @@ jobs:
   build:
     uses: ./.github/workflows/reusable-build.yml
     with:
-      archive_name: firmware-${{ github.jobs[github.job].name }}
+      archive_name: firmware-${{ env.display_name }}
